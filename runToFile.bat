@@ -1,0 +1,1 @@
+"C:\Program Files\Java\jre7\bin\java.exe" -classpath "C:\Github\Java\*;." HelloWorld > out.txt 2>&1

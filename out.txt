@@ -1,0 +1,26 @@
+12/11/26 16:34:02 INFO zookeeper.ZooKeeper: Client environment:zookeeper.version=3.4.3-1240972, built on 02/06/2012 10:48 GMT
+12/11/26 16:34:02 INFO zookeeper.ZooKeeper: Client environment:host.name=10.0.0.2
+12/11/26 16:34:02 INFO zookeeper.ZooKeeper: Client environment:java.version=1.7.0_04
+12/11/26 16:34:02 INFO zookeeper.ZooKeeper: Client environment:java.vendor=Oracle Corporation
+12/11/26 16:34:02 INFO zookeeper.ZooKeeper: Client environment:java.home=C:\Program Files\Java\jre7
+12/11/26 16:34:02 INFO zookeeper.ZooKeeper: Client environment:java.class.path=C:\Github\Java\commons-configuration-1.6.jar;C:\Github\Java\commons-lang-2.5.jar;C:\Github\Java\commons-logging-1.1.1.jar;C:\Github\Java\hadoop-core-1.0.3.jar;C:\Github\Java\hbase-0.94.2.jar;C:\Github\Java\log4j-1.2.16.jar;C:\Github\Java\slf4j-api-1.4.3.jar;C:\Github\Java\slf4j-log4j12-1.4.3.jar;C:\Github\Java\zookeeper-3.4.3.jar;.
+12/11/26 16:34:02 INFO zookeeper.ZooKeeper: Client environment:java.library.path=C:\Program Files\Java\jre7\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Perl64\site\bin;C:\Perl64\bin;C:\Program Files\Common Files\Microsoft Shared\Windows Live;C:\Program Files (x86)\Common Files\Microsoft Shared\Windows Live;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files (x86)\Common Files\Roxio Shared\DLLShared\;C:\Program Files (x86)\Common Files\Roxio Shared\OEM\DLLShared\;C:\Program Files (x86)\Common Files\Roxio Shared\OEM\DLLShared\;C:\Program Files (x86)\Common Files\Roxio Shared\OEM\12.0\DLLShared\;C:\Program Files (x86)\Roxio\OEM\AudioCore\;C:\Program Files (x86)\Microsoft Visual Studio 9.0\VC\bin;C:\mingw64\bin;C:\Program Files (x86)\Calibre2\;C:\Program Files (x86)\nodejs\;C:\Program Files\Microsoft\Web Platform Installer\;C:\Program Files (x86)\Microsoft ASP.NET\ASP.NET Web Pages\v1.0\;c:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;c:\Program Files\Microsoft SQL Server\100\Tools\Binn\;c:\Program Files\Microsoft SQL Server\100\DTS\Binn\;C:\Program Files (x86)\Heroku\bin;C:\Program Files (x86)\ruby-1.9.2\bin;C:\Program Files (x86)\git\bin;C:\Program Files (x86)\git\cmd;C:\lein;.
+12/11/26 16:34:02 INFO zookeeper.ZooKeeper: Client environment:java.io.tmpdir=C:\Users\matan\AppData\Local\Temp\
+12/11/26 16:34:02 INFO zookeeper.ZooKeeper: Client environment:java.compiler=<NA>
+12/11/26 16:34:02 INFO zookeeper.ZooKeeper: Client environment:os.name=Windows 7
+12/11/26 16:34:02 INFO zookeeper.ZooKeeper: Client environment:os.arch=amd64
+12/11/26 16:34:02 INFO zookeeper.ZooKeeper: Client environment:os.version=6.1
+12/11/26 16:34:02 INFO zookeeper.ZooKeeper: Client environment:user.name=matan
+12/11/26 16:34:02 INFO zookeeper.ZooKeeper: Client environment:user.home=C:\Users\matan
+12/11/26 16:34:02 INFO zookeeper.ZooKeeper: Client environment:user.dir=C:\Github\Java
+12/11/26 16:34:02 INFO zookeeper.ZooKeeper: Initiating client connection, connectString=10.0.0.3:2181 sessionTimeout=180000 watcher=hconnection
+12/11/26 16:34:02 INFO zookeeper.ClientCnxn: Opening socket connection to server /10.0.0.3:2181
+12/11/26 16:34:02 INFO zookeeper.RecoverableZooKeeper: The identifier of this process is 23548@P-Cloudaloe-01
+12/11/26 16:34:07 INFO client.ZooKeeperSaslClient: Client will not SASL-authenticate because the default JAAS configuration section 'Client' could not be found. If you are not using SASL, you may ignore this. On the other hand, if you expected SASL to work, please fix your JAAS configuration.
+12/11/26 16:34:07 INFO zookeeper.ClientCnxn: Socket connection established to 10.0.0.3/10.0.0.3:2181, initiating session
+12/11/26 16:34:07 INFO zookeeper.ClientCnxn: Session establishment complete on server 10.0.0.3/10.0.0.3:2181, sessionid = 0x13b3d21e4af0004, negotiated timeout = 40000
+12/11/26 16:34:08 INFO ipc.HBaseRPC: Server at localhost/127.0.0.1:47995 could not be reached after 1 tries, giving up.
+12/11/26 16:34:11 INFO ipc.HBaseRPC: Server at localhost/127.0.0.1:47995 could not be reached after 1 tries, giving up.
+12/11/26 16:34:14 INFO ipc.HBaseRPC: Server at localhost/127.0.0.1:47995 could not be reached after 1 tries, giving up.
+12/11/26 16:34:17 INFO ipc.HBaseRPC: Server at localhost/127.0.0.1:47995 could not be reached after 1 tries, giving up.
+^C
