@@ -24,3 +24,18 @@
 12/11/26 18:55:00 INFO ipc.HBaseRPC: Server at localhost/127.0.0.1:47995 could not be reached after 1 tries, giving up.
 12/11/26 18:55:03 INFO ipc.HBaseRPC: Server at localhost/127.0.0.1:47995 could not be reached after 1 tries, giving up.
 12/11/26 18:55:07 INFO ipc.HBaseRPC: Server at localhost/127.0.0.1:47995 could not be reached after 1 tries, giving up.
+12/11/26 18:55:11 INFO ipc.HBaseRPC: Server at localhost/127.0.0.1:47995 could not be reached after 1 tries, giving up.
+12/11/26 18:55:17 INFO ipc.HBaseRPC: Server at localhost/127.0.0.1:47995 could not be reached after 1 tries, giving up.
+12/11/26 18:55:23 INFO ipc.HBaseRPC: Server at localhost/127.0.0.1:47995 could not be reached after 1 tries, giving up.
+12/11/26 18:55:34 INFO ipc.HBaseRPC: Server at localhost/127.0.0.1:47995 could not be reached after 1 tries, giving up.
+12/11/26 18:55:52 INFO ipc.HBaseRPC: Server at localhost/127.0.0.1:47995 could not be reached after 1 tries, giving up.
+Exception in thread "main" org.apache.hadoop.hbase.client.NoServerForRegionException: Unable to find region for myTable,,99999999999999 after 10 tries.
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegionInMeta(HConnectionManager.java:955)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegion(HConnectionManager.java:860)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegionInMeta(HConnectionManager.java:962)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegion(HConnectionManager.java:864)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegion(HConnectionManager.java:821)
+	at org.apache.hadoop.hbase.client.HTable.finishSetup(HTable.java:234)
+	at org.apache.hadoop.hbase.client.HTable.<init>(HTable.java:174)
+	at org.apache.hadoop.hbase.client.HTable.<init>(HTable.java:133)
+	at HelloWorld.main(HelloWorld.java:32)
