@@ -1,2 +1,2 @@
-"C:\Program Files\Java\jre7\bin\java.exe" -classpath "C:\Github\Java\*;." HelloWorld
+"C:\Program Files\Java\jre7\bin\java.exe" -classpath ".\*;." HelloWorld
 pause

@@ -29,7 +29,7 @@ public class HelloWorld {
 	
     // This instantiates an HTable object that connects you to
     // the "myLittleHBaseTable" table.
-    HTable table = new HTable(config, "myLittleHBaseTable");
+    HTable table = new HTable(config, "myTable");
 
     // To add to a row, use Put.  A Put constructor takes the name of the row
     // you want to insert into as a byte array.  In HBase, the Bytes class has
@@ -46,8 +46,8 @@ public class HelloWorld {
     // like to update.  The column family must already exist in your table
     // schema.  The qualifier can be anything.  All must be specified as byte
     // arrays as hbase is all about byte arrays.  Lets pretend the table
-    // 'myLittleHBaseTable' was created with a family 'myLittleFamily'.
-    p.add(Bytes.toBytes("myLittleFamily"), Bytes.toBytes("someQualifier"),
+    // 'myTable' was created with a family 'myLittleFamily'.
+    p.add(Bytes.toBytes("myColumnFamily"), Bytes.toBytes("someQualifier"),
       Bytes.toBytes("Some Value"));
 
     // Once you've adorned your Put instance with all the updates you want to
@@ -61,7 +61,7 @@ public class HelloWorld {
     // the hbase return into the form you find most palatable.
     Get g = new Get(Bytes.toBytes("myLittleRow"));
     Result r = table.get(g);
-    byte [] value = r.getValue(Bytes.toBytes("myLittleFamily"),
+    byte [] value = r.getValue(Bytes.toBytes("myColumnFamily"),
       Bytes.toBytes("someQualifier"));
     // If we convert the value bytes, we should get back 'Some Value', the
     // value we inserted at this location.
@@ -73,7 +73,7 @@ public class HelloWorld {
     // of the table.  To set up a Scanner, do like you did above making a Put
     // and a Get, create a Scan.  Adorn it with column names, etc.
     Scan s = new Scan();
-    s.addColumn(Bytes.toBytes("myLittleFamily"), Bytes.toBytes("someQualifier"));
+    s.addColumn(Bytes.toBytes("myColumnFamily"), Bytes.toBytes("someQualifier"));
     ResultScanner scanner = table.getScanner(s);
     try {
       // Scanners return Result instances.
