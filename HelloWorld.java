@@ -22,7 +22,7 @@ public class HelloWorld {
     
 	Configuration config = HBaseConfiguration.create();
 	//config.set("hbase.zookeeper.quorum", "10.0.0.3");
-	config.set("hbase.zookeeper.quorum", "localhost");
+	config.set("hbase.zookeeper.quorum", "kiji01.local");
 	config.set("hbase.zookeeper.property.clientPort", "2181");
 	
 	//config.set("hbase.master", "10.0.0.3:60000");

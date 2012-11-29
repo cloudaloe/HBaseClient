@@ -1,41 +1,37 @@
-12/11/26 18:54:49 INFO zookeeper.ZooKeeper: Client environment:zookeeper.version=3.4.3-1240972, built on 02/06/2012 10:48 GMT
-12/11/26 18:54:49 INFO zookeeper.ZooKeeper: Client environment:host.name=10.0.0.2
-12/11/26 18:54:49 INFO zookeeper.ZooKeeper: Client environment:java.version=1.7.0_04
-12/11/26 18:54:49 INFO zookeeper.ZooKeeper: Client environment:java.vendor=Oracle Corporation
-12/11/26 18:54:49 INFO zookeeper.ZooKeeper: Client environment:java.home=C:\Program Files\Java\jre7
-12/11/26 18:54:49 INFO zookeeper.ZooKeeper: Client environment:java.class.path=.\commons-configuration-1.6.jar;.\commons-lang-2.5.jar;.\commons-logging-1.1.1.jar;.\hadoop-core-1.0.3.jar;.\hbase-0.94.2.jar;.\log4j-1.2.16.jar;.\protobuf-java-2.4.0a.jar;.\slf4j-api-1.4.3.jar;.\slf4j-log4j12-1.4.3.jar;.\zookeeper-3.4.3.jar;.
-12/11/26 18:54:49 INFO zookeeper.ZooKeeper: Client environment:java.library.path=C:\Program Files\Java\jre7\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Perl64\site\bin;C:\Perl64\bin;C:\Program Files\Common Files\Microsoft Shared\Windows Live;C:\Program Files (x86)\Common Files\Microsoft Shared\Windows Live;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files (x86)\Common Files\Roxio Shared\DLLShared\;C:\Program Files (x86)\Common Files\Roxio Shared\OEM\DLLShared\;C:\Program Files (x86)\Common Files\Roxio Shared\OEM\DLLShared\;C:\Program Files (x86)\Common Files\Roxio Shared\OEM\12.0\DLLShared\;C:\Program Files (x86)\Roxio\OEM\AudioCore\;C:\Program Files (x86)\Microsoft Visual Studio 9.0\VC\bin;C:\mingw64\bin;C:\Program Files (x86)\Calibre2\;C:\Program Files (x86)\nodejs\;C:\Program Files\Microsoft\Web Platform Installer\;C:\Program Files (x86)\Microsoft ASP.NET\ASP.NET Web Pages\v1.0\;c:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;c:\Program Files\Microsoft SQL Server\100\Tools\Binn\;c:\Program Files\Microsoft SQL Server\100\DTS\Binn\;C:\Program Files (x86)\Heroku\bin;C:\Program Files (x86)\ruby-1.9.2\bin;C:\Program Files (x86)\git\bin;C:\Program Files (x86)\git\cmd;C:\lein;.
-12/11/26 18:54:49 INFO zookeeper.ZooKeeper: Client environment:java.io.tmpdir=C:\Users\matan\AppData\Local\Temp\
-12/11/26 18:54:49 INFO zookeeper.ZooKeeper: Client environment:java.compiler=<NA>
-12/11/26 18:54:49 INFO zookeeper.ZooKeeper: Client environment:os.name=Windows 7
-12/11/26 18:54:49 INFO zookeeper.ZooKeeper: Client environment:os.arch=amd64
-12/11/26 18:54:49 INFO zookeeper.ZooKeeper: Client environment:os.version=6.1
-12/11/26 18:54:49 INFO zookeeper.ZooKeeper: Client environment:user.name=matan
-12/11/26 18:54:49 INFO zookeeper.ZooKeeper: Client environment:user.home=C:\Users\matan
-12/11/26 18:54:49 INFO zookeeper.ZooKeeper: Client environment:user.dir=C:\Github\HBaseClient
-12/11/26 18:54:49 INFO zookeeper.ZooKeeper: Initiating client connection, connectString=10.0.0.3:2181 sessionTimeout=180000 watcher=hconnection
-12/11/26 18:54:49 INFO zookeeper.ClientCnxn: Opening socket connection to server /10.0.0.3:2181
-12/11/26 18:54:49 INFO zookeeper.RecoverableZooKeeper: The identifier of this process is 28132@P-Cloudaloe-01
-12/11/26 18:54:53 INFO client.ZooKeeperSaslClient: Client will not SASL-authenticate because the default JAAS configuration section 'Client' could not be found. If you are not using SASL, you may ignore this. On the other hand, if you expected SASL to work, please fix your JAAS configuration.
-12/11/26 18:54:53 INFO zookeeper.ClientCnxn: Socket connection established to 10.0.0.3/10.0.0.3:2181, initiating session
-12/11/26 18:54:53 INFO zookeeper.ClientCnxn: Session establishment complete on server 10.0.0.3/10.0.0.3:2181, sessionid = 0x13b3d21e4af0011, negotiated timeout = 40000
-12/11/26 18:54:54 INFO ipc.HBaseRPC: Server at localhost/127.0.0.1:47995 could not be reached after 1 tries, giving up.
-12/11/26 18:54:57 INFO ipc.HBaseRPC: Server at localhost/127.0.0.1:47995 could not be reached after 1 tries, giving up.
-12/11/26 18:55:00 INFO ipc.HBaseRPC: Server at localhost/127.0.0.1:47995 could not be reached after 1 tries, giving up.
-12/11/26 18:55:03 INFO ipc.HBaseRPC: Server at localhost/127.0.0.1:47995 could not be reached after 1 tries, giving up.
-12/11/26 18:55:07 INFO ipc.HBaseRPC: Server at localhost/127.0.0.1:47995 could not be reached after 1 tries, giving up.
-12/11/26 18:55:11 INFO ipc.HBaseRPC: Server at localhost/127.0.0.1:47995 could not be reached after 1 tries, giving up.
-12/11/26 18:55:17 INFO ipc.HBaseRPC: Server at localhost/127.0.0.1:47995 could not be reached after 1 tries, giving up.
-12/11/26 18:55:23 INFO ipc.HBaseRPC: Server at localhost/127.0.0.1:47995 could not be reached after 1 tries, giving up.
-12/11/26 18:55:34 INFO ipc.HBaseRPC: Server at localhost/127.0.0.1:47995 could not be reached after 1 tries, giving up.
-12/11/26 18:55:52 INFO ipc.HBaseRPC: Server at localhost/127.0.0.1:47995 could not be reached after 1 tries, giving up.
-Exception in thread "main" org.apache.hadoop.hbase.client.NoServerForRegionException: Unable to find region for myTable,,99999999999999 after 10 tries.
-	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegionInMeta(HConnectionManager.java:955)
-	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegion(HConnectionManager.java:860)
-	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegionInMeta(HConnectionManager.java:962)
-	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegion(HConnectionManager.java:864)
+12/11/29 17:33:01 WARN zookeeper.ZKConfig: java.net.UnknownHostException: kiji01.local
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.net.InetAddress$1.lookupAllHostAddr(Unknown Source)
+	at java.net.InetAddress.getAddressesFromNameService(Unknown Source)
+	at java.net.InetAddress.getAllByName0(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at java.net.InetAddress.getByName(Unknown Source)
+	at org.apache.hadoop.hbase.zookeeper.ZKConfig.getZKQuorumServersString(ZKConfig.java:201)
+	at org.apache.hadoop.hbase.zookeeper.ZKConfig.getZKQuorumServersString(ZKConfig.java:245)
+	at org.apache.hadoop.hbase.zookeeper.ZooKeeperWatcher.<init>(ZooKeeperWatcher.java:151)
+	at org.apache.hadoop.hbase.zookeeper.ZooKeeperWatcher.<init>(ZooKeeperWatcher.java:131)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.getZooKeeperWatcher(HConnectionManager.java:1341)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.ensureZookeeperTrackers(HConnectionManager.java:584)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegion(HConnectionManager.java:846)
 	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegion(HConnectionManager.java:821)
 	at org.apache.hadoop.hbase.client.HTable.finishSetup(HTable.java:234)
 	at org.apache.hadoop.hbase.client.HTable.<init>(HTable.java:174)
 	at org.apache.hadoop.hbase.client.HTable.<init>(HTable.java:133)
-	at HelloWorld.main(HelloWorld.java:32)
+	at HelloWorld.main(HelloWorld.java:33)
+
+12/11/29 17:33:01 ERROR zookeeper.ZKConfig: no valid quorum servers found in zoo.cfg
+Exception in thread "main" org.apache.hadoop.hbase.ZooKeeperConnectionException: An error is preventing HBase from connecting to ZooKeeper
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.getZooKeeperWatcher(HConnectionManager.java:1345)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.ensureZookeeperTrackers(HConnectionManager.java:584)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegion(HConnectionManager.java:846)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegion(HConnectionManager.java:821)
+	at org.apache.hadoop.hbase.client.HTable.finishSetup(HTable.java:234)
+	at org.apache.hadoop.hbase.client.HTable.<init>(HTable.java:174)
+	at org.apache.hadoop.hbase.client.HTable.<init>(HTable.java:133)
+	at HelloWorld.main(HelloWorld.java:33)
+Caused by: java.io.IOException: Unable to determine ZooKeeper ensemble
+	at org.apache.hadoop.hbase.zookeeper.ZKUtil.connect(ZKUtil.java:96)
+	at org.apache.hadoop.hbase.zookeeper.ZooKeeperWatcher.<init>(ZooKeeperWatcher.java:157)
+	at org.apache.hadoop.hbase.zookeeper.ZooKeeperWatcher.<init>(ZooKeeperWatcher.java:131)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.getZooKeeperWatcher(HConnectionManager.java:1341)
+	... 7 more
