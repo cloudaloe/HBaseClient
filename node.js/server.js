@@ -9,19 +9,46 @@
 
 //var hostname = 'localhost';
 var port = process.env.PORT || 443;  // for Heroku runtime compatibility
-var staticPath = './code';
-var mysqlConnection = null;
+//var staticPath = './code';
 
+var hbase = require('hbase');
 var https = require('https'),      // module for https
     fs =    require('fs');         // required to read certs and keys
 
+console.log('Connecting to HBase');
+var hbaseConn = hbase({ 
+	host: 'localhost', 
+	port: 8080 // HBase REST Daemon port (as used when starting that daemon with ./bin/hbase-daemon.sh start rest -p <port>)
+});
+
+hbaseConn.getVersion( function( error, version ){
+    console.log('HBase version info is:', version);
+});
+	
+hbaseConn.getTables( function( error, tables ){
+    console.log('HBase tables found:', tables);
+} );
+
+var cells = 
+  [ { column: 'myColumnFamily:val1', $: '100' }
+  , { column: 'myColumnFamily:val2', $: '50' }
+  , { column: 'myColumnFamily:val3', $: '200' }
+  ];
+
+var newRow = hbaseConn.getTable('myTable').getRow('myLittleRow2');
+newRow.put(cells, function(error, success){
+    if (success)
+		console.log('values insertion succeeded');
+	else
+		console.log('values insertion failed, error is ', error);
+});
+
+var row = hbaseConn.getTable('myTable').getRow('myLittleRow2');
+var rowData = row.get(function(error, value){
+    console.log(value);
+});
 
 var queryString = require('querystring');
-//var server = require('http').createServer(requestHandler);
-//var static = require('node-static'); 
-//staticContentServer = new static.Server(staticPath, { cache: false });
-
-console.log('Server starting on port', port);
 
 function requestHandler(request, response) {
 
@@ -132,6 +159,7 @@ var options = {
     rejectUnauthorized: false
 };
 
+console.log('Server starting on port', port);
 https.createServer(options, function (req, res) {
     if (req.client.authorized) {
         res.writeHead(200, {"Content-Type": "application/json"});
@@ -141,3 +169,7 @@ https.createServer(options, function (req, res) {
         res.end('{"status":"denied"}');
     }
 }).listen(port);
+
+//var server = require('http').createServer(requestHandler);
+//var static = require('node-static'); 
+//staticContentServer = new static.Server(staticPath, { cache: false });

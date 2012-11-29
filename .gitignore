@@ -1,5 +1,6 @@
 *.jar
 out.txt
+node_modules
 
 #################
 ## Eclipse
