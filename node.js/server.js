@@ -8,7 +8,7 @@
 //
 
 //var hostname = 'localhost';
-var port = process.env.PORT || 443;  // for Heroku runtime compatibility
+var port = process.env.PORT || 8000;  // for Heroku runtime compatibility
 //var staticPath = './code';
 
 var hbase = require('hbase');
@@ -155,7 +155,10 @@ function requestHandler(request, response) {
 //	console.log('Server listening on' + ': '  + port);});
 
 var options = {
-    requestCert:        false,
+    key:    fs.readFileSync('OpenSSL/server.key'),
+    cert:   fs.readFileSync('OpenSSL/server.crt'),
+    ca:     fs.readFileSync('OpenSSL/ca.crt'),
+    requestCert:        true,
     rejectUnauthorized: false
 };
 
@@ -164,9 +167,11 @@ https.createServer(options, function (req, res) {
     if (req.client.authorized) {
         res.writeHead(200, {"Content-Type": "application/json"});
         res.end('{"status":"approved"}');
+		console.log('incoming request approved');
     } else {
         res.writeHead(401, {"Content-Type": "application/json"});
         res.end('{"status":"denied"}');
+		console.log('incoming request denied');
     }
 }).listen(port);
 
