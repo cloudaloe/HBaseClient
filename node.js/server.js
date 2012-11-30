@@ -159,7 +159,7 @@ var options = {
     cert:   fs.readFileSync('OpenSSL/server.crt'),
     ca:     fs.readFileSync('OpenSSL/ca.crt'),
     requestCert:        true,
-    rejectUnauthorized: false
+    rejectUnauthorized: true
 };
 
 console.log('Server starting on port', port);
@@ -167,11 +167,11 @@ https.createServer(options, function (req, res) {
     if (req.client.authorized) {
         res.writeHead(200, {"Content-Type": "application/json"});
         res.end('{"status":"approved"}');
-		console.log('incoming request approved');
+		console.log('incoming request SSL approved: ', req.client.getPeerCertificate());
     } else {
         res.writeHead(401, {"Content-Type": "application/json"});
         res.end('{"status":"denied"}');
-		console.log('incoming request denied');
+		console.log('incoming request SSL denied', req.client.authorizationError);
     }
 }).listen(port);
 
