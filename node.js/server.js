@@ -167,7 +167,7 @@ https.createServer(options, function (req, res) {
     if (req.client.authorized) {
         res.writeHead(200, {"Content-Type": "application/json"});
         res.end('{"status":"approved"}');
-		console.log('incoming request SSL approved: ', req.client.getPeerCertificate());
+		console.log('incoming request SSL approved: ', req.client.getPeerCertificate()); // print client certificate including the subject Oname that can be used as an account ID
     } else {
         res.writeHead(401, {"Content-Type": "application/json"});
         res.end('{"status":"denied"}');
